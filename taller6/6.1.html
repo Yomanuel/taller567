@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Colores</title>
+    <script>
+        function cambiarColor(titulo, color) {
+            document.getElementById(titulo).style.color = color;
+        }
+    </script>
+</head>
+<body">
+
+    <h1 id="titulo">Bienvenido a mi página</h1>
+    <p>Visita <a href="https://www.google.com" target="_blank">Google</a></p>
+
+    <h3>Cambiar color del título:</h3>
+    <button onclick="cambiarColor('titulo', 'yellow')">Texto Amarillo</button>
+    <button onclick="cambiarColor('titulo', 'white')">Texto Blanco</button>
+    <button onclick="cambiarColor('titulo', 'red')">Texto Rojo</button>
+    <button onclick="cambiarColor('titulo', 'black')">Texto negro</button>
+</body>
+</html>
