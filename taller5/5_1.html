@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Áreas</title>
+    <script>
+        // Función para calcular el área de un cuadrado
+        function cuadrado(l) {
+            return l * l;
+        }
+        
+        // Función para calcular el área de un rectángulo
+        function rectangulo(l1, l2) {
+            return l1 * l2;
+        }
+        
+        // Función para calcular el área de un triángulo
+        function triangulo(b, h) {
+            return (b * h) / 2;
+        }
+
+        // Función para calcular el área de un círculo
+        function circulo(r) {
+            return Math.PI * Math.pow(r, 2);
+        }
+        
+        // Mostrar resultados en la página al cargar
+        window.onload = function() {
+            let nombre = "Yomanuel Perez"; 
+            let resultado = `
+                <h1>Cálculo de Áreas</h1>
+                <p>Autor: ${nombre}</p>
+                <p>Área del cuadrado de lado 10 cm = ${cuadrado(10)} cm²</p>
+                <p>Área del rectángulo de lados 10 cm y 5 cm = ${rectangulo(10, 5)} cm²</p>
+                <p>Área del triángulo de base 20 cm y altura 10 cm = ${triangulo(20, 10)} cm²</p>
+                <p>Área del círculo de radio 12 cm = ${circulo(12).toFixed(2)} cm²</p>
+            `;
+            document.body.innerHTML = resultado;
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

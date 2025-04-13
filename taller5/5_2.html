@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Día de nacimiento</title>
+    <script language="JavaScript1.3">
+        // Definición de la función que calcula el día
+        function calculodia(z) {
+            let fecha = new Date(z);
+            return fecha.getDay();
+        }
+
+        // Función constructora del objeto datos
+        function datos(a, b, c, d) {
+            this.x = a;
+            this.y = b;
+            this.z = c;
+            this.dia = calculodia(d);
+        }
+
+        // Array con los nombres de los días
+        let dias = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+
+        // Instanciación del objeto con tus datos
+        let mio = new datos("Yomanuel", "Perez", "Moca", "May 16, 2006");
+
+        // Mostrar el mensaje en la página
+        document.write("Me llamo " + mio.x + " " + mio.y + " soy de " + mio.z + " y nací un día " + dias[mio.dia]);
+    </script>
+</head>
+<body>
+</body>
+</html>

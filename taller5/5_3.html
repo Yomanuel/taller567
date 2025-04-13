@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplos Simples de Objetos</title>
+    <script>
+        // 1. Objeto Date: obtener la fecha de hoy
+        let fechaHoy = new Date();
+        let textoFecha = "Hoy es: " + fechaHoy.toDateString();
+
+        // 2. Objeto Math: calcular el número mayor
+        let numeroMayor = Math.max(3, 7, 2, 5);
+        let textoMayor = "El número mayor es: " + numeroMayor;
+
+        // 3. Objeto String: convertir texto a mayúsculas
+        let nombre = "yomanuel";
+        let nombreMayus = nombre.toUpperCase();
+        let textoNombre = "Tu nombre en mayúsculas es: " + nombreMayus;
+
+        // 4. Objeto Array: contar elementos
+        let frutas = ["Manzana", "Banana", "Uva"];
+        let textoFrutas = "Tengo " + frutas.length + " frutas.";
+
+        // 5. Objeto personalizado: una persona simple
+        let persona = {
+            nombre: "Yomanuel",
+            edad: 18,
+            ciudad: "Moca"
+        };
+        let textoPersona = "Me llamo " + persona.nombre + ", tengo " + persona.edad + " años y vivo en " + persona.ciudad + ".";
+
+        // Mostrar todos los resultados al cargar la página
+        window.onload = function() {
+            let resultado = `
+                <h1>Ejemplos Simples de Objetos en JavaScript</h1>
+                <p>${textoFecha}</p>
+                <p>${textoMayor}</p>
+                <p>${textoNombre}</p>
+                <p>${textoFrutas}</p>
+                <p>${textoPersona}</p>
+            `;
+            document.body.innerHTML = resultado;
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
